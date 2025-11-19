@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     color: #7ecc00;
     margin: 0;
     padding: 0;
@@ -24,6 +24,7 @@ header,
 nav {
     width: 100%;
     left: 0;
+    height: 5vh;
 }
 
 nav {
@@ -35,7 +36,7 @@ header {
     background-color: #003344;
     color: #00ff99;
     height: 8vmax;
-    font-size: 2vmax;
+    font-size: 2vw;
     top: 0;
     padding-bottom: 5vmax;
     z-index: 100;
@@ -59,7 +60,7 @@ nav {
     background-color: #440077;
     height: 2vmax;
     top: 8vmax;
-    font-size: 1vmax;
+    font-size: 1vw;
     position: fixed;
     z-index: 100;
     text-align: center;
@@ -73,7 +74,7 @@ nav a {
     color: #00ff99;
     font-weight: bold;
     padding: 1vmax;
-    margin: 5px 0;
+    margin: 1vmax 0;
 }
 
 nav a:hover {
@@ -86,7 +87,8 @@ nav a:action {
 
 main {
     position: static;
-    margin: 10vmax 10vw 0 10vw;
+    margin-left: 10vw;
+    margin-top: calc(8vmax + 4vh);
     width: 80vw;
     text-align: center;
     display: flex;
@@ -119,7 +121,10 @@ h1,
 h2,
 h4 {
     padding: 0.5vmax 0;
-    margin-top: 1vmax;
+}
+
+h3 {
+    font-size: 3vh;
 }
 
 h1 {
@@ -181,7 +186,7 @@ table {
     width: 90%;
     border-collapse: collapse;
     border: solid #ff3300 0.2vmax;
-    font-size: 1vmax;
+    font-size: 1vw;
 }
 
 th,
@@ -210,28 +215,28 @@ label {
 }
 
 .lb11 {
-    font-size: 1vmax;
+    font-size: 1vh;
     color: #ff3300;
     margin-top: 0.2vmax;
     margin-bottom: 0.2vmax;
 }
 
 .lb10 {
-    font-size: 1vmax;
+    font-size: 1vh;
     color: #00ffff;
     margin-top: 0.2vmax;
     margin-bottom: 1vmax;
 }
 
 .lb21 {
-    font-size: 1vmax;
+    font-size: 1vh;
     color: #ff33ff;
     margin-top: 0.2vmax;
     margin-bottom: 0.2vmax;
 }
 
 .lb20 {
-    font-size: 1vmax;
+    font-size: 1vh;
     color: #00ffff;
     margin-top: 0.2vmax;
     margin-bottom: 1vmax;
@@ -247,7 +252,7 @@ textarea {
     border-radius: 0.2vmax;
     color: #009900;
     background-color: #003355;
-    font-size: 0.7vmax;
+    font-size: 0.7vw;
 }
 
 button {
@@ -256,7 +261,7 @@ button {
     border: solid #00aacc 0.2vmax;
     box-shadow: 0.3vmax 0.7vmax 0.4vmax #777777;
     padding: 0.8vmax;
-    font-size: 0.7vmax;
+    font-size: 0.7vw;
     font-weight: bold;
     border-radius: 0.4vmax;
     cursor: pointer;
@@ -280,13 +285,12 @@ footer {
     box-shadow: 0 1vmin 1vmin #00ff33;
     font-weight: bold;
     height: 3vmax;
-    font-size: 1vmax;
+    font-size: 1vw;
     width: calc(100% - 8vw);
     position: static;
     z-index: 200;
     padding: 1vmax;
     margin: 4vw;
-
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -306,6 +310,13 @@ li {
 
 #about {
     font-style: italic;
+}
+
+.sec1 {
+    align-items: start;
+}
+
+p {
     text-align: left;
 }
 
@@ -335,4 +346,31 @@ a:active {
 #text {
     width: 1vmax;
     height: 1vmax;
+}
+
+@media (aspect-ratio < 0.7) {
+    .header {
+        font-size: 5vh;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    h2 {
+        font-size: 2vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+    nav {
+        height: 4vh;
+        font-size: 1.2vh;
+    }
+
+    p {
+        font-size: 1.2vh;
+    }
 }
