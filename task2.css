@@ -373,4 +373,12 @@ a:active {
     p {
         font-size: 1.2vh;
     }
+
+    button,
+    input,
+    select,
+    textarea,
+    table {
+        font-size: 1.2vh;
+    }
 }
